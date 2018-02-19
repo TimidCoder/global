@@ -71,6 +71,12 @@
         <!-- AWS -->
         <aws-bom.version>1.10.59</aws-bom.version>
 
+        <!-- Camunda BPMN -->
+        <camunda-bom.version>7.8.0</camunda-bom.version>
+
+        <!-- Java scripting engines -->
+        <groovy.version>2.4.13</groovy.version>
+
         <!-- Others -->
         <junit.version>4.12</junit.version>
         <zxing.version>3.2.1</zxing.version>
@@ -92,8 +98,10 @@
         <antlr.version>3.2</antlr.version>
         <resteasy-jaxrs.version>3.0.19.Final</resteasy-jaxrs.version>
         <googlemaps.services.version>0.2.5</googlemaps.services.version>
+        <uuid-generator.version>3.1.2</uuid-generator.version>
 
-        <spring.version>4.1.9.RELEASE</spring.version>
+        <spring-bom.version>5.0.3.RELEASE</spring-bom.version>
+        <spring-data-jpa.version>2.0.3.RELEASE</spring-data-jpa.version>
 
         <netty.version>4.1.8.Final</netty.version>          <!-- 4.1.5ff has http/2. Newer versions are out, but vert.x says they broke some API with 4.1.9 -->
         <vertx3.version>3.4.2</vertx3.version>              <!-- 3.3.3ff has http/2 -->
@@ -228,6 +236,20 @@
                 <scope>import</scope>
                 <type>pom</type>
             </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-framework-bom</artifactId>
+                <version>${spring-bom.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.camunda.bpm</groupId>
+                <artifactId>camunda-bom</artifactId>
+                <version>${camunda-bom.version}</version>
+                <scope>import</scope>
+                <type>pom</type>
+            </dependency>
 
             <!-- Xtext/Xtend for Eclipse -->
             <dependency>
@@ -333,6 +355,11 @@
                 <artifactId>hibernate-validator-annotation-processor</artifactId>
                 <version>${hibernate-validator.version}</version>
             </dependency>
+            <dependency>
+                <groupId>org.springframework.data</groupId>
+                <artifactId>spring-data-jpa</artifactId>
+                <version>${spring-data-jpa.version}</version>
+            </dependency>
 
             <!-- Javax -->
             <dependency>
@@ -428,6 +455,15 @@
                 <groupId>commons-fileupload</groupId>
                 <artifactId>commons-fileupload</artifactId>
                 <version>${commons-fileupload.version}</version>
+            </dependency>
+
+            <!-- Java scripting engines -->
+            <dependency>
+                <groupId>org.codehaus.groovy</groupId>
+                <artifactId>groovy-all</artifactId>
+                <version>${groovy.version}</version>
+                <!-- Scripting engines are only needed at runtime, thus this should be the default -->
+                <scope>runtime</scope>
             </dependency>
 
             <!-- Others -->
@@ -763,19 +799,20 @@
                 <version>${jackson.version}</version>
             </dependency>
             <dependency>
+                <groupId>com.fasterxml.uuid</groupId>
+                <artifactId>java-uuid-generator</artifactId>
+                <version>${uuid-generator.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>log4j</groupId>
+                        <artifactId>log4j</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <dependency>
                 <artifactId>solr-solrj</artifactId>
                 <groupId>org.apache.solr</groupId>
                 <version>${solr.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework</groupId>
-                <artifactId>spring-beans</artifactId>
-                <version>${spring.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.activiti</groupId>
-                <artifactId>activiti-engine</artifactId>
-                <version>${activiti.version}</version>
             </dependency>
 
             <!-- Should be provided by a BOM, but is not!!! -->
