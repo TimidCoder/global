@@ -46,6 +46,7 @@
         <hibernate.version>5.3.1.Final</hibernate.version>
         <hibernate-validator.version>6.0.10.Final</hibernate-validator.version>
         <ehcache.version>2.10.4</ehcache.version>
+        <ehcache3.version>3.5.2</ehcache3.version>
 
         <!-- Javax -->
         <jaxb.version>2.3.0</jaxb.version>
@@ -335,6 +336,11 @@
             </dependency>
             <dependency>
                 <groupId>org.hibernate</groupId>
+                <artifactId>hibernate-jcache</artifactId>
+                <version>${hibernate.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hibernate</groupId>
                 <artifactId>hibernate-core</artifactId>
                 <version>${hibernate.version}</version>
             </dependency>
@@ -395,6 +401,13 @@
                 <groupId>org.glassfish</groupId>
                 <artifactId>javax.el</artifactId>
                 <version>${javax-el.version}</version>
+            </dependency>
+
+            <!-- Ehcache 3.x -->
+            <dependency>
+                <groupId>org.ehcache</groupId>
+                <artifactId>ehcache</artifactId>
+                <version>${ehcache3.version}</version>
             </dependency>
 
             <!-- Commons -->
