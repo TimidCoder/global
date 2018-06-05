@@ -78,6 +78,7 @@
 
         <!-- Others -->
         <junit.version>4.12</junit.version>
+        <icu4j.version>61.1</icu4j.version>
         <zxing.version>3.3.3</zxing.version>
         <org.mockito-core.version>2.18.3</org.mockito-core.version>
 
@@ -102,8 +103,8 @@
         <spring-bom.version>5.0.3.RELEASE</spring-bom.version>
         <spring-data-jpa.version>2.0.3.RELEASE</spring-data-jpa.version>
 
-        <netty.version>4.1.25.Final</netty.version>          <!-- 4.1.5ff has http/2. Newer versions are out, but vert.x says they broke some API with 4.1.9 -->
-        <vertx3.version>3.5.1</vertx3.version>
+        <netty.version>4.1.25.Final</netty.version>
+        <vertx3.version>3.5.2</vertx3.version>
 
         <!-- dependencies only for SE -->
         <c3p0.version>0.9.5.2</c3p0.version>
@@ -181,6 +182,11 @@
                 <groupId>org.slf4j</groupId>
                 <artifactId>slf4j-log4j12</artifactId>
                 <version>${org.slf4j-api.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.ibm.icu</groupId>
+                <artifactId>icu4j</artifactId>
+                <version>${icu4j.version}</version>
             </dependency>
 
             <!-- Import External BOMs -->
