@@ -6,19 +6,19 @@
         <format>jar</format>
     </formats>
 
-    <includeBaseDirectory>false</includeBaseDirectory>
+    <baseDirectory>${project.artifactId}</baseDirectory>
 
     <fileSets>
         <fileSet>
             <directory>src/main/sql</directory>
-            <outputDirectory>src/main/sql</outputDirectory>
+            <outputDirectory>/</outputDirectory>
             <includes>
                 <include>**/*.sql</include>
             </includes>
         </fileSet>
         <fileSet>
             <directory>src/generated/sql</directory>
-            <outputDirectory>src/generated/sql</outputDirectory>
+            <outputDirectory>/</outputDirectory>
             <includes>
                 <include>**/*.sql</include>
             </includes>
