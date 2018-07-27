@@ -13,50 +13,49 @@
     <description>Global dependency management for all backend projects</description>
 
     <properties>
-        <jodatime.version>2.9.9</jodatime.version>
+        <jodatime.version>2.10</jodatime.version>
         <org.slf4j-api.version>1.7.25</org.slf4j-api.version>
 
         <!-- jpaw / bonaparte: versions for import of BOM. The plugin version is defined separately in SE/EE -->
         <!-- Note that the version of the bonapart-dsl plugin is set in "global-settings" -->
-        <jpaw-bom.version>1.5.22</jpaw-bom.version>
-        <jpaw8-bom.version>1.4.21</jpaw8-bom.version>
-        <bonaparte-bom.version>4.6.2</bonaparte-bom.version>   <!-- this is the version of bonaparte-java -->
-        <bonaparte8-bom.version>2.3.1</bonaparte8-bom.version>
-        <persistence-bom.version>4.6.2</persistence-bom.version>
-        <jdp-bom.version>0.4.2</jdp-bom.version>
-        <fixedpoint-bom.version>0.7.4</fixedpoint-bom.version>
+        <jpaw-bom.version>1.6.0</jpaw-bom.version>
+        <jpaw8-bom.version>1.5.0</jpaw8-bom.version>
+        <bonaparte-bom.version>4.7.1</bonaparte-bom.version>   <!-- this is the version of bonaparte-java -->
+        <bonaparte8-bom.version>2.4.0</bonaparte8-bom.version>
+        <persistence-bom.version>4.7.1</persistence-bom.version>
+        <jdp-bom.version>0.5.0</jdp-bom.version>
+        <fixedpoint-bom.version>0.8.0</fixedpoint-bom.version>
         <!-- jpaw / bonaparte: versions for explicit dependency -->
-        <xtendsions.version>1.2.3</xtendsions.version>
+        <xtendsions.version>1.3.0</xtendsions.version>
 
         <!-- Versions of Xtext & Xtend -->
         <!-- Note that the versions of the xtext/xtend plugins are ALSO set in "global-settings" -->
-        <xtend.version>2.13.0</xtend.version>
-        <xtext.version>2.13.0</xtext.version>
+        <xtend.version>2.14.0</xtend.version>
+        <xtext.version>2.14.0</xtext.version>
 
         <!-- Database driver versions -->
         <driver.ojdbc6.version>11.2.0</driver.ojdbc6.version>
         <driver.ojdbc8.version>12.2.0.1.0</driver.ojdbc8.version>
-        <driver.postgresql.version>42.1.4</driver.postgresql.version>
+        <driver.postgresql.version>42.2.2</driver.postgresql.version>
         <driver.sqlserver.version>6.2.2.jre8</driver.sqlserver.version>
         <driver.hana.version>1.120.19.043e2a479158ce6ef060a5c605ae2b97161e6b25</driver.hana.version>
-        <h2.version>1.4.196</h2.version>
+        <h2.version>1.4.197</h2.version>
 
         <!-- OR mappers -->
-        <eclipselink.version>2.7.0</eclipselink.version>
-        <hibernate.version>5.2.12.Final</hibernate.version>
-        <hibernate-validator.version>6.0.7.Final</hibernate-validator.version>
+        <eclipselink.version>2.7.1</eclipselink.version>
+        <hibernate.version>5.3.1.Final</hibernate.version>
+        <hibernate-validator.version>6.0.10.Final</hibernate-validator.version>
         <ehcache.version>2.10.4</ehcache.version>
+        <ehcache3.version>3.5.2</ehcache3.version>
 
         <!-- Javax -->
-        <jaxb-api.version>2.3.0</jaxb-api.version>
+        <jaxb.version>2.3.0</jaxb.version>
         <javax-el.version>3.0.1-b08</javax-el.version> <!-- required by hibernate-validator, CVE-2013-2566 exists, no secure version known (3.0.0)! -->
         <javax.inject.version>1</javax.inject.version>
-        <javax.enterprise.cdi-api.version>1.2</javax.enterprise.cdi-api.version>
         <javax.servlet-api.version>3.1.0</javax.servlet-api.version>
-        <javax.activation.version>1.1.1</javax.activation.version>
+        <javax.activation.version>1.2.0</javax.activation.version>
         <javax.validation-api.version>2.0.1.Final</javax.validation-api.version>
-        <javax.javaee-api.version>7.0</javax.javaee-api.version>
-        <javax.persistence.version>2.1.0</javax.persistence.version>
+        <javax.persistence.version>2.2.0</javax.persistence.version>
 
         <!-- Commons -->
         <commons-lang.version>2.6</commons-lang.version>
@@ -79,22 +78,23 @@
 
         <!-- Others -->
         <junit.version>4.12</junit.version>
-        <zxing.version>3.2.1</zxing.version>
-        <org.mockito-core.version>2.5.7</org.mockito-core.version>
+        <icu4j.version>61.1</icu4j.version>
+        <zxing.version>3.3.3</zxing.version>
+        <org.mockito-core.version>2.18.3</org.mockito-core.version>
 
-        <quartz.version>2.2.2</quartz.version>
+        <quartz.version>2.3.0</quartz.version>                         <!-- TODO: should check if 2.3.0 offers improvements (is newer, and Java 7+, quartz 2.2.3 is Java 6+) -->
         <quartz-oracle.version>2.1.7</quartz-oracle.version>
-        <jasperreports.version>5.6.1</jasperreports.version>
+        <jasperreports.version>6.6.0</jasperreports.version>
         <castor.version>1.2</castor.version>     <!-- pulled by jasper, version needed for CVE fix -->
         <jdtcore.version>3.1.1</jdtcore.version>
         <jsap.version>2.1</jsap.version>
-        <httpcore.version>4.4.5</httpcore.version>
+        <httpcore.version>4.4.9</httpcore.version>
         <xmlunit.version>1.5</xmlunit.version>
-        <apache-poi.version>3.14</apache-poi.version>                   <!-- must be 3.15 at least due to CVE-2017-5644, jasper issues with 3.17 -->
+        <apache-poi.version>3.16</apache-poi.version>                   <!-- must be 3.15 at least due to CVE-2017-5644, jasper issues with 3.17 -->
         <freemarker.version>2.3.23</freemarker.version>
         <flyingsaucer.version>9.0.8</flyingsaucer.version>
         <javassist.version>3.20.0-GA</javassist.version>
-        <guava.version>18.0</guava.version>
+        <guava.version>20.0</guava.version>
         <antlr.version>3.2</antlr.version>
         <resteasy-jaxrs.version>3.0.19.Final</resteasy-jaxrs.version>
         <googlemaps.services.version>0.2.5</googlemaps.services.version>
@@ -103,18 +103,18 @@
         <spring-bom.version>5.0.3.RELEASE</spring-bom.version>
         <spring-data-jpa.version>2.0.3.RELEASE</spring-data-jpa.version>
 
-        <netty.version>4.1.8.Final</netty.version>          <!-- 4.1.5ff has http/2. Newer versions are out, but vert.x says they broke some API with 4.1.9 -->
-        <vertx3.version>3.4.2</vertx3.version>              <!-- 3.3.3ff has http/2 -->
+        <netty.version>4.1.25.Final</netty.version>
+        <vertx3.version>3.5.2</vertx3.version>
 
         <!-- dependencies only for SE -->
         <c3p0.version>0.9.5.2</c3p0.version>
-        <hikaricp.version>2.7.2</hikaricp.version>
+        <hikaricp.version>3.2.0</hikaricp.version>
 
         <!-- dependencies for SE and EE, but with maybe differing versions -->
         <javax.mail.version>1.6.0</javax.mail.version>
         <jadira-usertype.version>4.0.0.GA</jadira-usertype.version>
-        <jackson.version>2.6.5</jackson.version>
-        <camel.version>2.17.7</camel.version>
+        <jackson.version>2.9.5</jackson.version>
+        <camel.version>2.21.1</camel.version>
         <solr.version>6.6.1</solr.version>   <!-- must be 6.6.1 at least due to CVE-2017-9803 -->
         <activiti.version>5.19.0.2</activiti.version>
     </properties>
@@ -138,8 +138,14 @@
             <dependency>
                 <groupId>javax.xml.bind</groupId>
                 <artifactId>jaxb-api</artifactId>
-                <version>${jaxb-api.version}</version>
+                <version>${jaxb.version}</version>
             </dependency>
+            <dependency>
+                <groupId>org.glassfish.jaxb</groupId>
+                <artifactId>jaxb-runtime</artifactId>
+                <version>${jaxb.version}</version>
+            </dependency>
+
             <!-- slf4j -->
             <dependency>
                 <groupId>org.slf4j</groupId>
@@ -176,6 +182,11 @@
                 <groupId>org.slf4j</groupId>
                 <artifactId>slf4j-log4j12</artifactId>
                 <version>${org.slf4j-api.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.ibm.icu</groupId>
+                <artifactId>icu4j</artifactId>
+                <version>${icu4j.version}</version>
             </dependency>
 
             <!-- Import External BOMs -->
@@ -331,6 +342,11 @@
             </dependency>
             <dependency>
                 <groupId>org.hibernate</groupId>
+                <artifactId>hibernate-jcache</artifactId>
+                <version>${hibernate.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hibernate</groupId>
                 <artifactId>hibernate-core</artifactId>
                 <version>${hibernate.version}</version>
             </dependency>
@@ -373,35 +389,13 @@
                 <version>${javax.validation-api.version}</version>
             </dependency>
             <dependency>
-                <groupId>javax.enterprise</groupId>
-                <artifactId>cdi-api</artifactId>
-                <version>${javax.enterprise.cdi-api.version}</version>
-                <exclusions>
-                    <exclusion>
-                        <!-- this pulls in the old api V1.0, java 7 already has api V1.1, which is required -->
-                        <groupId>javax.annotation</groupId>
-                        <artifactId>jsr250-api</artifactId>
-                    </exclusion>
-                </exclusions>
-            </dependency>
-            <dependency>
-                <groupId>javax</groupId>
-                <artifactId>javaee-api</artifactId>
-                <version>${javax.javaee-api.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>javax</groupId>
-                <artifactId>javaee-web-api</artifactId>
-                <version>${javax.javaee-api.version}</version>
-            </dependency>
-            <dependency>
                 <groupId>javax.servlet</groupId>
                 <artifactId>javax.servlet-api</artifactId>
                 <version>${javax.servlet-api.version}</version>
             </dependency>
             <dependency>
                 <groupId>javax.activation</groupId>
-                <artifactId>activation</artifactId>
+                <artifactId>javax.activation-api</artifactId>
                 <version>${javax.activation.version}</version>
             </dependency>
             <dependency>
@@ -413,6 +407,13 @@
                 <groupId>org.glassfish</groupId>
                 <artifactId>javax.el</artifactId>
                 <version>${javax-el.version}</version>
+            </dependency>
+
+            <!-- Ehcache 3.x -->
+            <dependency>
+                <groupId>org.ehcache</groupId>
+                <artifactId>ehcache</artifactId>
+                <version>${ehcache3.version}</version>
             </dependency>
 
             <!-- Commons -->
@@ -628,6 +629,26 @@
             <dependency>
                 <groupId>io.netty</groupId>
                 <artifactId>netty-codec-http</artifactId>
+                <version>${netty.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.netty</groupId>
+                <artifactId>netty-codec-http2</artifactId>
+                <version>${netty.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.netty</groupId>
+                <artifactId>netty-handler-proxy</artifactId>
+                <version>${netty.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.netty</groupId>
+                <artifactId>netty-resolver</artifactId>
+                <version>${netty.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.netty</groupId>
+                <artifactId>netty-resolver-dns</artifactId>
                 <version>${netty.version}</version>
             </dependency>
 
