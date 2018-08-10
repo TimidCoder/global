@@ -20,10 +20,10 @@
         <!-- Note that the version of the bonapart-dsl plugin is set in "global-settings" -->
         <jpaw-bom.version>1.6.0</jpaw-bom.version>
         <jpaw8-bom.version>1.5.0</jpaw8-bom.version>
-        <bonaparte-bom.version>4.8.1</bonaparte-bom.version>   <!-- this is the version of bonaparte-java -->
+        <bonaparte-bom.version>4.8.2</bonaparte-bom.version>   <!-- this is the version of bonaparte-java -->
         <bonaparte8-bom.version>2.5.0</bonaparte8-bom.version>
         <persistence-bom.version>4.8.0</persistence-bom.version>
-        <jdp-bom.version>0.5.0</jdp-bom.version>
+        <jdp-bom.version>0.6.1</jdp-bom.version>
         <fixedpoint-bom.version>0.8.0</fixedpoint-bom.version>
         <!-- jpaw / bonaparte: versions for explicit dependency -->
         <xtendsions.version>1.3.0</xtendsions.version>
@@ -43,7 +43,7 @@
 
         <!-- OR mappers -->
         <eclipselink.version>2.7.2</eclipselink.version>
-        <hibernate.version>5.3.3.Final</hibernate.version>
+        <hibernate.version>5.3.4.Final</hibernate.version>
         <hibernate-validator.version>6.0.11.Final</hibernate-validator.version>
         <ehcache.version>2.10.4</ehcache.version>
         <ehcache3.version>3.5.2</ehcache3.version>
@@ -103,7 +103,7 @@
         <spring-bom.version>5.0.3.RELEASE</spring-bom.version>
         <spring-data-jpa.version>2.0.3.RELEASE</spring-data-jpa.version>
 
-        <netty.version>4.1.27.Final</netty.version>
+        <netty.version>4.1.28.Final</netty.version>
         <vertx3.version>3.5.3</vertx3.version>
 
         <!-- dependencies only for SE -->
