@@ -18,11 +18,11 @@
 
         <!-- jpaw / bonaparte: versions for import of BOM. The plugin version is defined separately in SE/EE -->
         <!-- Note that the version of the bonapart-dsl plugin is set in "global-settings" -->
-        <jpaw-bom.version>1.6.0</jpaw-bom.version>
-        <jpaw8-bom.version>1.5.0</jpaw8-bom.version>
-        <bonaparte-bom.version>4.8.2</bonaparte-bom.version>   <!-- this is the version of bonaparte-java -->
-        <bonaparte8-bom.version>2.5.0</bonaparte8-bom.version>
-        <persistence-bom.version>4.8.0</persistence-bom.version>
+        <jpaw-bom.version>1.6.1</jpaw-bom.version>
+        <jpaw8-bom.version>1.5.1</jpaw8-bom.version>
+        <bonaparte-bom.version>4.8.3</bonaparte-bom.version>   <!-- this is the version of bonaparte-java -->
+        <bonaparte8-bom.version>2.5.1</bonaparte8-bom.version>
+        <persistence-bom.version>4.8.3</persistence-bom.version>
         <jdp-bom.version>0.6.1</jdp-bom.version>
         <fixedpoint-bom.version>0.8.0</fixedpoint-bom.version>
         <!-- jpaw / bonaparte: versions for explicit dependency -->
@@ -36,15 +36,15 @@
         <!-- Database driver versions -->
         <driver.ojdbc6.version>11.2.0</driver.ojdbc6.version>
         <driver.ojdbc8.version>12.2.0.1.0</driver.ojdbc8.version>
-        <driver.postgresql.version>42.2.2</driver.postgresql.version>
+        <driver.postgresql.version>42.2.4</driver.postgresql.version>
         <driver.sqlserver.version>6.2.2.jre8</driver.sqlserver.version>
         <driver.hana.version>1.120.19.043e2a479158ce6ef060a5c605ae2b97161e6b25</driver.hana.version>
         <h2.version>1.4.197</h2.version>
 
         <!-- OR mappers -->
-        <eclipselink.version>2.7.2</eclipselink.version>
-        <hibernate.version>5.3.4.Final</hibernate.version>
-        <hibernate-validator.version>6.0.11.Final</hibernate-validator.version>
+        <eclipselink.version>2.7.3</eclipselink.version>
+        <hibernate.version>5.3.5.Final</hibernate.version>
+        <hibernate-validator.version>6.0.12.Final</hibernate-validator.version>
         <ehcache.version>2.10.4</ehcache.version>
         <ehcache3.version>3.5.2</ehcache3.version>
 
