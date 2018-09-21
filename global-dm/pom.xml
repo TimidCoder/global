@@ -43,8 +43,8 @@
 
         <!-- OR mappers -->
         <eclipselink.version>2.7.3</eclipselink.version>
-        <hibernate.version>5.3.5.Final</hibernate.version>
-        <hibernate-validator.version>6.0.12.Final</hibernate-validator.version>
+        <hibernate.version>5.3.6.Final</hibernate.version>
+        <hibernate-validator.version>6.0.12.Final</hibernate-validator.version>  <!-- 6.0.13 is not in maven central -->
         <ehcache.version>2.10.4</ehcache.version>
         <ehcache3.version>3.5.2</ehcache3.version>
 
@@ -103,7 +103,7 @@
         <spring-bom.version>5.0.3.RELEASE</spring-bom.version>
         <spring-data-jpa.version>2.0.3.RELEASE</spring-data-jpa.version>
 
-        <netty.version>4.1.28.Final</netty.version>
+        <netty.version>4.1.29.Final</netty.version>
         <vertx3.version>3.5.3</vertx3.version>
 
         <!-- dependencies only for SE -->
