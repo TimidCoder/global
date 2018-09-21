@@ -70,7 +70,7 @@
         <xtend-maven-plugin.version>2.15.0</xtend-maven-plugin.version>
         <xtext-maven-plugin.version>2.15.0</xtext-maven-plugin.version>
 
-        <bonaparte-plugin.version>4.9.0</bonaparte-plugin.version>
+        <bonaparte-plugin.version>4.9.1</bonaparte-plugin.version>
 
         <xtend-plugin-phase>generate-sources</xtend-plugin-phase>
         <xtend-plugin-test-phase>generate-test-sources</xtend-plugin-test-phase>

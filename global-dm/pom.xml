@@ -20,9 +20,9 @@
         <!-- Note that the version of the bonapart-dsl plugin is set in "global-settings" -->
         <jpaw-bom.version>1.7.0</jpaw-bom.version>
         <jpaw8-bom.version>1.6.0</jpaw8-bom.version>
-        <bonaparte-bom.version>4.9.0</bonaparte-bom.version>   <!-- this is the version of bonaparte-java -->
-        <bonaparte8-bom.version>2.6.0</bonaparte8-bom.version>
-        <persistence-bom.version>4.9.0</persistence-bom.version>
+        <bonaparte-bom.version>4.9.1</bonaparte-bom.version>   <!-- this is the version of bonaparte-java -->
+        <bonaparte8-bom.version>2.6.1</bonaparte8-bom.version>
+        <persistence-bom.version>4.9.1</persistence-bom.version>
         <jdp-bom.version>0.7.0</jdp-bom.version>
         <fixedpoint-bom.version>0.9.0</fixedpoint-bom.version>
         <!-- jpaw / bonaparte: versions for explicit dependency -->
